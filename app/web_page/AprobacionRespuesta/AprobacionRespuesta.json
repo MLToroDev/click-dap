@@ -257,15 +257,7 @@
     ]
   ],
   "variables" : {
-    "solicitud" : {
-      "type" : "json",
-      "value" : {
-        "type" : "rest",
-        "requestMethod" : "GET",
-        "url" : "../API/bdm/businessData/com/company/model/Solicitud/{{context.solicitudInstancia_ref}}",
-        "requestHeaders" : [ ]
-      }
-    }
+
   },
   "assets" : [
     {

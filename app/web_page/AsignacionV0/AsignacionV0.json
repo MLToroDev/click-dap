@@ -1,10 +1,10 @@
 {
-  "id" : "Respuesta",
-  "name" : "Respuesta",
+  "id" : "AsignacionV0",
+  "name" : "AsignacionV0",
   "type" : "form",
-  "uuid" : "8fde0c0b-724d-40e0-b383-474cf0c8642c",
+  "uuid" : "9dd066a8-c9f0-446e-9d0b-8bc51e65c351",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1762480169064,
+  "lastUpdate" : 1762520989488,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -27,7 +27,7 @@
           },
           "text" : {
             "type" : "interpolation",
-            "value" : "Preparar Respuesta para el Ciudadano"
+            "value" : "Revisar y Asignar Solicitud"
           },
           "level" : {
             "type" : "constant",
@@ -38,7 +38,7 @@
             "value" : "left"
           }
         },
-        "reference" : "6047b01f-9c81-4ce2-a5ad-56052bdaa0f3",
+        "reference" : "0f503808-5a79-4f23-a289-19b439a1e9d0",
         "hasValidationError" : false,
         "id" : "pbTitle"
       }
@@ -67,10 +67,14 @@
           },
           "text" : {
             "type" : "interpolation",
-            "value" : "<strong>Solicitante:</strong> {{solicitud.nombreSolicitante}}"
+            "value" : "<strong>Nombre:</strong> {{solicitud.nombreSolicitante || 'Sin información'}}"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
           }
         },
-        "reference" : "2f9d9585-4ec9-4b69-80ce-f3b8c03debc2",
+        "reference" : "9a02d0a8-7279-4618-8cf0-b0d59c40e483",
         "hasValidationError" : false,
         "id" : "pbText"
       },
@@ -100,7 +104,7 @@
             "value" : "<strong>Radicado:</strong> {{solicitud.numeroRadicado || 'No asignado'}}"
           }
         },
-        "reference" : "0beb9bfb-0b56-4d44-8aa5-64ddb1fa45ae",
+        "reference" : "27c02174-6181-4cc2-b359-26b161d0fbc8",
         "hasValidationError" : false,
         "id" : "pbText"
       },
@@ -127,10 +131,10 @@
           },
           "text" : {
             "type" : "interpolation",
-            "value" : "<strong>Resultado del análisis:</strong> {{solicitud.resultadoAnalisis || 'Pendiente'}}"
+            "value" : "<strong>Estado actual:</strong> {{solicitud.estado || 'REGISTRADA'}}"
           }
         },
-        "reference" : "d8b8dda0-3b49-4a36-9a0e-8ecf59cf93ba",
+        "reference" : "f5b50b5a-785c-4f8d-9f1e-90ba0f52a59d",
         "hasValidationError" : false,
         "id" : "pbText"
       }
@@ -159,10 +163,10 @@
           },
           "text" : {
             "type" : "interpolation",
-            "value" : "<strong>Descripción inicial:</strong><br/>{{solicitud.descripcion}}"
+            "value" : "<strong>Descripción:</strong><br/>{{solicitud.descripcion}}"
           }
         },
-        "reference" : "02272d62-de2c-476a-a4a8-4a2a739c021f",
+        "reference" : "997ce4db-35ed-4d26-94bb-7114201eac80",
         "hasValidationError" : false,
         "id" : "pbText"
       }
@@ -187,26 +191,91 @@
           },
           "label" : {
             "type" : "interpolation",
-            "value" : "Respuesta Final"
+            "value" : "Asignar a Servidor/Profesional"
           },
           "labelPosition" : {
             "type" : "constant",
             "value" : "top"
           },
+          "placeholder" : {
+            "type" : "interpolation",
+            "value" : "Selecciona un responsable"
+          },
           "required" : {
             "type" : "constant",
             "value" : true
           },
-          "placeholder" : {
-            "type" : "interpolation",
-            "value" : "Redacta la respuesta que se compartirá con el ciudadano"
+          "availableValues" : {
+            "type" : "constant",
+            "value" : [
+              {
+                "label" : "Servidor Profesional 1",
+                "value" : "SERVIDOR_1"
+              },
+              {
+                "label" : "Servidor Profesional 2",
+                "value" : "SERVIDOR_2"
+              },
+              {
+                "label" : "Servidor Profesional 3",
+                "value" : "SERVIDOR_3"
+              }
+            ]
+          },
+          "displayedKey" : {
+            "type" : "constant",
+            "value" : "label"
+          },
+          "returnedKey" : {
+            "type" : "constant",
+            "value" : "value"
           },
           "value" : {
             "type" : "contract",
-            "value" : "respuesta"
+            "value" : "responsable"
           }
         },
-        "reference" : "337ea4b0-2f08-4c9e-a41a-f3e3ccce0246",
+        "reference" : "44cf0430-b2a9-4a37-9d97-7b314074a8d0",
+        "hasValidationError" : false,
+        "id" : "pbSelect"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Observaciones de la Asignación (Opcional)"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "placeholder" : {
+            "type" : "interpolation",
+            "value" : "Anota instrucciones o comentarios relevantes"
+          },
+          "value" : {
+            "type" : "contract",
+            "value" : "observacionesLider"
+          }
+        },
+        "reference" : "2a1bef64-9f12-479f-85c4-97a8e76a07ad",
         "hasValidationError" : false,
         "id" : "pbTextarea"
       }
@@ -231,7 +300,7 @@
           },
           "label" : {
             "type" : "interpolation",
-            "value" : "Enviar para Aprobación"
+            "value" : "Asignar"
           },
           "buttonStyle" : {
             "type" : "constant",
@@ -246,27 +315,25 @@
             "value" : "Submit task"
           }
         },
-        "reference" : "b217d4c8-845f-4e1c-ab6e-60b8d492de09",
+        "reference" : "df7ab0bc-e179-43bc-a4c6-83a1001cb3ce",
         "hasValidationError" : false,
         "id" : "pbButton"
       }
     ]
   ],
-  "variables" : {
-   
-  },
+  "variables" : { },
   "assets" : [
     {
-      "id" : "5e1cb358-b7a7-4d97-9803-b4860d96da83",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "a4be7277-3a1d-492a-b1dc-d0ee00ee43e3",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "cc94c81c-f705-4095-9a30-311c47985490",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "c344abf9-204f-4828-b9a2-10e187a222fe",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     }

@@ -318,15 +318,7 @@
     ]
   ],
   "variables" : {
-  "formInput": {
-    "type": "json",
-    "value": {
-      "type": "rest",
-      "requestMethod": "GET",
-      "url": "../{{context.solicitudInstancia_ref.link}}",
-      "requestHeaders": []
-    }
-  }
+  
   },
   "assets" : [
     {
