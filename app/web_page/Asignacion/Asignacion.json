@@ -1,0 +1,354 @@
+{
+  "id" : "Asignacion",
+  "name" : "Asignacion",
+  "type" : "form",
+  "uuid" : "9dd066a8-c9f0-446e-9d0b-8bc51e65c351",
+  "modelVersion" : "2.6",
+  "lastUpdate" : 1762480160284,
+  "description" : "Page generated with Bonita UI designer",
+  "rows" : [
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Revisar y Asignar Solicitud"
+          },
+          "level" : {
+            "type" : "constant",
+            "value" : "Level 2"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "0f503808-5a79-4f23-a289-19b439a1e9d0",
+        "hasValidationError" : false,
+        "id" : "pbTitle"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 4,
+          "lg" : 4
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : "mb-3"
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "<strong>Nombre:</strong> {{solicitud.nombreSolicitante || 'Sin información'}}"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "9a02d0a8-7279-4618-8cf0-b0d59c40e483",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      },
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 4,
+          "lg" : 4
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : "mb-3"
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "<strong>Radicado:</strong> {{solicitud.numeroRadicado || 'No asignado'}}"
+          }
+        },
+        "reference" : "27c02174-6181-4cc2-b359-26b161d0fbc8",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      },
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 4,
+          "lg" : 4
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : "mb-3"
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "<strong>Estado actual:</strong> {{solicitud.estado || 'REGISTRADA'}}"
+          }
+        },
+        "reference" : "f5b50b5a-785c-4f8d-9f1e-90ba0f52a59d",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : "mb-3"
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "<strong>Descripción:</strong><br/>{{solicitud.descripcion}}"
+          }
+        },
+        "reference" : "997ce4db-35ed-4d26-94bb-7114201eac80",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Asignar a Servidor/Profesional"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "placeholder" : {
+            "type" : "interpolation",
+            "value" : "Selecciona un responsable"
+          },
+          "required" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "availableValues" : {
+            "type" : "constant",
+            "value" : [
+              {
+                "label" : "Servidor Profesional 1",
+                "value" : "SERVIDOR_1"
+              },
+              {
+                "label" : "Servidor Profesional 2",
+                "value" : "SERVIDOR_2"
+              },
+              {
+                "label" : "Servidor Profesional 3",
+                "value" : "SERVIDOR_3"
+              }
+            ]
+          },
+          "displayedKey" : {
+            "type" : "constant",
+            "value" : "label"
+          },
+          "returnedKey" : {
+            "type" : "constant",
+            "value" : "value"
+          },
+          "value" : {
+            "type" : "contract",
+            "value" : "responsable"
+          }
+        },
+        "reference" : "44cf0430-b2a9-4a37-9d97-7b314074a8d0",
+        "hasValidationError" : false,
+        "id" : "pbSelect"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Observaciones de la Asignación (Opcional)"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "placeholder" : {
+            "type" : "interpolation",
+            "value" : "Anota instrucciones o comentarios relevantes"
+          },
+          "value" : {
+            "type" : "contract",
+            "value" : "observacionesLider"
+          }
+        },
+        "reference" : "2a1bef64-9f12-479f-85c4-97a8e76a07ad",
+        "hasValidationError" : false,
+        "id" : "pbTextarea"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : "text-end"
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Asignar"
+          },
+          "buttonStyle" : {
+            "type" : "constant",
+            "value" : "primary"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "right"
+          },
+          "action" : {
+            "type" : "constant",
+            "value" : "Submit task"
+          }
+        },
+        "reference" : "df7ab0bc-e179-43bc-a4c6-83a1001cb3ce",
+        "hasValidationError" : false,
+        "id" : "pbButton"
+      }
+    ]
+  ],
+  "variables" : {
+    "solicitud" : {
+      "type" : "json",
+      "value" : {
+        "type" : "rest",
+        "requestMethod" : "GET",
+        "url" : "../API/bdm/businessData/com/company/model/Solicitud/{{context.solicitudInstancia_ref}}",
+        "requestHeaders" : [ ]
+      }
+    }
+  },
+  "assets" : [
+    {
+      "id" : "a4be7277-3a1d-492a-b1dc-d0ee00ee43e3",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "c344abf9-204f-4828-b9a2-10e187a222fe",
+      "name" : "localization.json",
+      "type" : "json",
+      "order" : 0,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "webResources" : [ ],
+  "hasValidationError" : false
+}

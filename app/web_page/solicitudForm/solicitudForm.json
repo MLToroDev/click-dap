@@ -1,0 +1,233 @@
+{
+  "id" : "solicitudForm",
+  "name" : "solicitudForm",
+  "type" : "form",
+  "uuid" : "31e86059-fc7d-4ec6-bebe-e68dfb9c7cf9",
+  "modelVersion" : "2.6",
+  "lastUpdate" : 1762480131570,
+  "description" : "Page generated with Bonita UI designer",
+  "rows" : [
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Registro de Nueva Solicitud Ciudadana"
+          },
+          "level" : {
+            "type" : "constant",
+            "value" : "Level 2"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "71d7d0f5-3da8-4df6-a898-2dc8f4726e6c",
+        "hasValidationError" : false,
+        "id" : "pbTitle"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 6,
+          "lg" : 6
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Nombre del Solicitante"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "required" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "placeholder" : {
+            "type" : "interpolation",
+            "value" : "Ingresa el nombre completo"
+          },
+          "value" : {
+            "type" : "contract",
+            "value" : "solicitudInstanciaInput.nombreSolicitante"
+          }
+        },
+        "reference" : "d7df1293-bd70-4a3a-9ee3-3bcddbb2cf88",
+        "hasValidationError" : false,
+        "id" : "pbInput"
+      },
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 6,
+          "lg" : 6
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Número de Radicado (si aplica)"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "placeholder" : {
+            "type" : "interpolation",
+            "value" : "Ingresa el radicado si existe"
+          },
+          "value" : {
+            "type" : "contract",
+            "value" : "solicitudInstanciaInput.numeroRadicado"
+          }
+        },
+        "reference" : "d4f8c0d2-90c7-4693-8e09-0c6a6fc0bd30",
+        "hasValidationError" : false,
+        "id" : "pbInput"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Descripción detallada de la solicitud"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "required" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "placeholder" : {
+            "type" : "interpolation",
+            "value" : "Describe la solicitud con el mayor detalle posible"
+          },
+          "value" : {
+            "type" : "contract",
+            "value" : "solicitudInstanciaInput.descripcion"
+          }
+        },
+        "reference" : "4e403dc2-7e0d-4b32-9251-ec09547ad5d5",
+        "hasValidationError" : false,
+        "id" : "pbTextarea"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : "text-end"
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Enviar Solicitud"
+          },
+          "buttonStyle" : {
+            "type" : "constant",
+            "value" : "primary"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "right"
+          },
+          "action" : {
+            "type" : "constant",
+            "value" : "Start process"
+          }
+        },
+        "reference" : "b6bdfd1f-7d5d-49e1-b74a-25dc5aea95b9",
+        "hasValidationError" : false,
+        "id" : "pbButton"
+      }
+    ]
+  ],
+  "variables" : { },
+  "assets" : [
+    {
+      "id" : "9efa7257-d28b-4803-96ab-e88332ef6f7d",
+      "name" : "localization.json",
+      "type" : "json",
+      "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "ffe27810-5d12-4e7a-a07c-c126885e6c39",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "webResources" : [ ],
+  "hasValidationError" : false
+}

@@ -1,0 +1,285 @@
+{
+  "id" : "Respuesta",
+  "name" : "Respuesta",
+  "type" : "form",
+  "uuid" : "8fde0c0b-724d-40e0-b383-474cf0c8642c",
+  "modelVersion" : "2.6",
+  "lastUpdate" : 1762480169064,
+  "description" : "Page generated with Bonita UI designer",
+  "rows" : [
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Preparar Respuesta para el Ciudadano"
+          },
+          "level" : {
+            "type" : "constant",
+            "value" : "Level 2"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "6047b01f-9c81-4ce2-a5ad-56052bdaa0f3",
+        "hasValidationError" : false,
+        "id" : "pbTitle"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 4,
+          "lg" : 4
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : "mb-3"
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "<strong>Solicitante:</strong> {{solicitud.nombreSolicitante}}"
+          }
+        },
+        "reference" : "2f9d9585-4ec9-4b69-80ce-f3b8c03debc2",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      },
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 4,
+          "lg" : 4
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : "mb-3"
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "<strong>Radicado:</strong> {{solicitud.numeroRadicado || 'No asignado'}}"
+          }
+        },
+        "reference" : "0beb9bfb-0b56-4d44-8aa5-64ddb1fa45ae",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      },
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 4,
+          "lg" : 4
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : "mb-3"
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "<strong>Resultado del análisis:</strong> {{solicitud.resultadoAnalisis || 'Pendiente'}}"
+          }
+        },
+        "reference" : "d8b8dda0-3b49-4a36-9a0e-8ecf59cf93ba",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : "mb-3"
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "<strong>Descripción inicial:</strong><br/>{{solicitud.descripcion}}"
+          }
+        },
+        "reference" : "02272d62-de2c-476a-a4a8-4a2a739c021f",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Respuesta Final"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "required" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "placeholder" : {
+            "type" : "interpolation",
+            "value" : "Redacta la respuesta que se compartirá con el ciudadano"
+          },
+          "value" : {
+            "type" : "contract",
+            "value" : "respuesta"
+          }
+        },
+        "reference" : "337ea4b0-2f08-4c9e-a41a-f3e3ccce0246",
+        "hasValidationError" : false,
+        "id" : "pbTextarea"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : "text-end"
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Enviar para Aprobación"
+          },
+          "buttonStyle" : {
+            "type" : "constant",
+            "value" : "primary"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "right"
+          },
+          "action" : {
+            "type" : "constant",
+            "value" : "Submit task"
+          }
+        },
+        "reference" : "b217d4c8-845f-4e1c-ab6e-60b8d492de09",
+        "hasValidationError" : false,
+        "id" : "pbButton"
+      }
+    ]
+  ],
+  "variables" : {
+    "solicitud" : {
+      "type" : "json",
+      "value" : {
+        "type" : "rest",
+        "requestMethod" : "GET",
+        "url" : "../API/bdm/businessData/com/company/model/Solicitud/{{context.solicitudInstancia_ref}}",
+        "requestHeaders" : [ ]
+      }
+    }
+  },
+  "assets" : [
+    {
+      "id" : "5e1cb358-b7a7-4d97-9803-b4860d96da83",
+      "name" : "localization.json",
+      "type" : "json",
+      "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "cc94c81c-f705-4095-9a30-311c47985490",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "webResources" : [ ],
+  "hasValidationError" : false
+}

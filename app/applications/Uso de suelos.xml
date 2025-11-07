@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<applications xmlns="http://documentation.bonitasoft.com/application-xml-schema/1.1">
+    <application homePage="1" layout="custompage_layoutBonita" theme="custompage_themeBonita" token="DAP" version="1.0" profile="User" state="ACTIVATED">
+        <displayName>DAP a un click</displayName>
+        <applicationPages>
+            <applicationPage customPage="custompage_IndexUsoSuelos" token="1"/>
+        </applicationPages>
+        <applicationMenus>
+            <applicationMenu applicationPage="1">
+                <displayName>Home</displayName>
+            </applicationMenu>
+        </applicationMenus>
+    </application>
+</applications>

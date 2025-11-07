@@ -1,0 +1,351 @@
+{
+  "id" : "AnalisisViabilidad",
+  "name" : "AnalisisViabilidad",
+  "type" : "form",
+  "uuid" : "6d7b0c39-2f20-4ad3-9cd6-e7876cac41b6",
+  "modelVersion" : "2.6",
+  "lastUpdate" : 1762482000000,
+  "description" : "Formulario para el análisis de viabilidad",
+  "rows" : [
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Análisis de Viabilidad de la Solicitud"
+          },
+          "level" : {
+            "type" : "constant",
+            "value" : "Level 2"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "4de8158f-07b7-4f7c-bf2f-7c396200dc8a",
+        "hasValidationError" : false,
+        "id" : "pbTitle"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 4,
+          "lg" : 4
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : "mb-3"
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "<strong>Solicitante:</strong> {{formInput.nombreSolicitante}}"
+          }
+        },
+        "reference" : "1c60c4be-4e4f-434c-9f99-92f7b8e49a1d",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      },
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 4,
+          "lg" : 4
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : "mb-3"
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "<strong>Radicado:</strong> {{formInput.numeroRadicado || 'No asignado'}}"
+          }
+        },
+        "reference" : "298d6d1b-45bb-4f71-b1c7-a243bce23435",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      },
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 4,
+          "lg" : 4
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : "mb-3"
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "<strong>Estado actual:</strong> {{formInput.estado}}"
+          }
+        },
+        "reference" : "5deed475-3569-48d8-8b7b-4b3d8a5dba9f",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : "mb-3"
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "<strong>Descripción:</strong><br/>{{formInput.descripcion}}"
+          }
+        },
+        "reference" : "1159252c-7d3f-4f23-9a76-4c62796b08f8",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Resultado del Análisis"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "required" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "availableValues" : {
+            "type" : "constant",
+            "value" : [
+              {
+                "label" : "Viable",
+                "value" : "VIABLE"
+              },
+              {
+                "label" : "Devolver por error en datos",
+                "value" : "ERROR_DATOS_CIUDADANO"
+              },
+              {
+                "label" : "Reasignar por error de competencia",
+                "value" : "ERROR_ASIGNACION"
+              }
+            ]
+          },
+          "displayedKey" : {
+            "type" : "constant",
+            "value" : "label"
+          },
+          "returnedKey" : {
+            "type" : "constant",
+            "value" : "value"
+          },
+          "selectedValue" : {
+            "type" : "contract",
+            "value" : "resultadoAnalisis"
+          }
+        },
+        "reference" : "f032df1b-7446-47f0-8d1c-2af2fba9d4cb",
+        "hasValidationError" : false,
+        "id" : "pbRadioButtons"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "expression",
+            "value" : "contractInput.resultadoAnalisis === 'VIABLE'"
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Justificación / Comentarios del Análisis"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "required" : {
+            "type" : "expression",
+            "value" : "contractInput.resultadoAnalisis && contractInput.resultadoAnalisis !== 'VIABLE'"
+          },
+          "placeholder" : {
+            "type" : "interpolation",
+            "value" : "Describe la razón de la devolución o reasignación"
+          },
+          "value" : {
+            "type" : "contract",
+            "value" : "comentariosTecnicos"
+          }
+        },
+        "reference" : "4c0dc79a-254a-40aa-bf67-deaee5dc7cc8",
+        "hasValidationError" : false,
+        "id" : "pbTextarea"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : "text-end"
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Registrar Análisis"
+          },
+          "buttonStyle" : {
+            "type" : "constant",
+            "value" : "primary"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "right"
+          },
+          "action" : {
+            "type" : "constant",
+            "value" : "Submit task"
+          }
+        },
+        "reference" : "a14cf579-ff3b-45ca-a0b9-86fca3b74d55",
+        "hasValidationError" : false,
+        "id" : "pbButton"
+      }
+    ]
+  ],
+  "variables" : {
+  "formInput": {
+    "type": "json",
+    "value": {
+      "type": "rest",
+      "requestMethod": "GET",
+      "url": "../{{context.solicitudInstancia_ref.link}}",
+      "requestHeaders": []
+    }
+  }
+  },
+  "assets" : [
+    {
+      "id" : "d55995fb-2fae-4be9-9d9d-59be4773a140",
+      "name" : "localization.json",
+      "type" : "json",
+      "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "ce743414-538d-4c6d-84b3-4a7b625752dc",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "webResources" : [ ],
+  "hasValidationError" : false
+}
+
