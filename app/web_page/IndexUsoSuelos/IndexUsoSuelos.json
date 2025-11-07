@@ -4,7 +4,7 @@
   "type" : "page",
   "uuid" : "59db0680-f316-47d8-8f5e-988a66913bc6",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1762475323567,
+  "lastUpdate" : 1762528186334,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -19,7 +19,7 @@
         "propertyValues" : {
           "cssClasses" : {
             "type" : "constant",
-            "value" : ""
+            "value" : "text-primary"
           },
           "hidden" : {
             "type" : "constant",
@@ -31,7 +31,738 @@
           },
           "text" : {
             "type" : "interpolation",
-            "value" : "Bienvenidos"
+            "value" : "Gestión de solicitudes de uso de suelos"
+          },
+          "level" : {
+            "type" : "constant",
+            "value" : "Level 1"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "center"
+          }
+        },
+        "reference" : "1c4b6b4a-4ddf-4b8b-9633-6f6f45bb6f5c",
+        "hasValidationError" : false,
+        "id" : "pbTitle"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : "lead text-center"
+          },
+          "label" : {
+            "type" : "interpolation"
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Configure, monitorea y ejecuta el flujo <strong>MiDiagrama</strong> desde esta vista de control."
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "center"
+          }
+        },
+        "reference" : "87c086bd-6c14-4d18-acb2-5c0a6713a9c5",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      }
+    ],
+    [
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : "row"
+          }
+        },
+        "reference" : "f4db20f3-8265-4c50-96e6-5bf97d51b0ef",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [
+            {
+              "type" : "container",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 12,
+                "md" : 6,
+                "lg" : 6
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : "panel panel-default"
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "repeatedCollection" : {
+                  "type" : "variable"
+                }
+              },
+              "reference" : "10e829d9-d147-4cb1-b503-7d05cafa4ff5",
+              "hasValidationError" : false,
+              "id" : "pbContainer",
+              "rows" : [
+                [
+                  {
+                    "type" : "component",
+                    "dimension" : {
+                      "xs" : 12,
+                      "sm" : 12,
+                      "md" : 12,
+                      "lg" : 12
+                    },
+                    "propertyValues" : {
+                      "cssClasses" : {
+                        "type" : "constant",
+                        "value" : "panel-heading"
+                      },
+                      "hidden" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "allowHTML" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "text" : {
+                        "type" : "interpolation",
+                        "value" : "Iniciar nueva solicitud"
+                      },
+                      "level" : {
+                        "type" : "constant",
+                        "value" : "Level 3"
+                      },
+                      "alignment" : {
+                        "type" : "constant",
+                        "value" : "left"
+                      }
+                    },
+                    "reference" : "5c2a7601-59a4-4bb7-b0c7-90f3f1219d9a",
+                    "hasValidationError" : false,
+                    "id" : "pbTitle"
+                  }
+                ],
+                [
+                  {
+                    "type" : "component",
+                    "dimension" : {
+                      "xs" : 12,
+                      "sm" : 12,
+                      "md" : 12,
+                      "lg" : 12
+                    },
+                    "propertyValues" : {
+                      "labelHidden" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "hidden" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "labelPosition" : {
+                        "type" : "constant",
+                        "value" : "top"
+                      },
+                      "cssClasses" : {
+                        "type" : "constant",
+                        "value" : "panel-body"
+                      },
+                      "labelWidth" : {
+                        "type" : "constant",
+                        "value" : 1
+                      },
+                      "readOnly" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "label" : {
+                        "type" : "interpolation",
+                        "value" : "Número radicado"
+                      },
+                      "placeholder" : {
+                        "type" : "constant",
+                        "value" : "RAD-001"
+                      },
+                      "type" : {
+                        "type" : "constant",
+                        "value" : "text"
+                      },
+                      "dimension" : {
+                        "type" : "constant",
+                        "value" : 12
+                      },
+                      "value" : {
+                        "type" : "variable",
+                        "value" : "startFormInput.solicitudInstanciaInput.numeroRadicado"
+                      },
+                      "required" : {
+                        "type" : "constant",
+                        "value" : true
+                      },
+                      "allowHTML" : {
+                        "type" : "constant",
+                        "value" : false
+                      }
+                    },
+                    "reference" : "bd6bde32-aa7f-4970-9e7e-a1c72a2246d6",
+                    "hasValidationError" : false,
+                    "id" : "pbInput"
+                  }
+                ],
+                [
+                  {
+                    "type" : "component",
+                    "dimension" : {
+                      "xs" : 12,
+                      "sm" : 12,
+                      "md" : 12,
+                      "lg" : 12
+                    },
+                    "propertyValues" : {
+                      "labelHidden" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "hidden" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "labelPosition" : {
+                        "type" : "constant",
+                        "value" : "top"
+                      },
+                      "cssClasses" : {
+                        "type" : "constant",
+                        "value" : "panel-body"
+                      },
+                      "labelWidth" : {
+                        "type" : "constant",
+                        "value" : 1
+                      },
+                      "readOnly" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "label" : {
+                        "type" : "interpolation",
+                        "value" : "Descripción"
+                      },
+                      "placeholder" : {
+                        "type" : "constant",
+                        "value" : "Describe brevemente la solicitud"
+                      },
+                      "type" : {
+                        "type" : "constant",
+                        "value" : "text"
+                      },
+                      "dimension" : {
+                        "type" : "constant",
+                        "value" : 12
+                      },
+                      "value" : {
+                        "type" : "variable",
+                        "value" : "startFormInput.solicitudInstanciaInput.descripcion"
+                      },
+                      "required" : {
+                        "type" : "constant",
+                        "value" : true
+                      },
+                      "allowHTML" : {
+                        "type" : "constant",
+                        "value" : false
+                      }
+                    },
+                    "reference" : "b8df45a4-12f7-44d9-b8c2-1f8bd627d3b3",
+                    "hasValidationError" : false,
+                    "id" : "pbInput"
+                  }
+                ],
+                [
+                  {
+                    "type" : "component",
+                    "dimension" : {
+                      "xs" : 12,
+                      "sm" : 12,
+                      "md" : 12,
+                      "lg" : 12
+                    },
+                    "propertyValues" : {
+                      "labelHidden" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "hidden" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "labelPosition" : {
+                        "type" : "constant",
+                        "value" : "top"
+                      },
+                      "cssClasses" : {
+                        "type" : "constant",
+                        "value" : "panel-body"
+                      },
+                      "labelWidth" : {
+                        "type" : "constant",
+                        "value" : 1
+                      },
+                      "readOnly" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "label" : {
+                        "type" : "interpolation",
+                        "value" : "Nombre del solicitante"
+                      },
+                      "placeholder" : {
+                        "type" : "constant",
+                        "value" : "Nombre completo"
+                      },
+                      "type" : {
+                        "type" : "constant",
+                        "value" : "text"
+                      },
+                      "dimension" : {
+                        "type" : "constant",
+                        "value" : 12
+                      },
+                      "value" : {
+                        "type" : "variable",
+                        "value" : "startFormInput.solicitudInstanciaInput.nombreSolicitante"
+                      },
+                      "required" : {
+                        "type" : "constant",
+                        "value" : true
+                      },
+                      "allowHTML" : {
+                        "type" : "constant",
+                        "value" : false
+                      }
+                    },
+                    "reference" : "777dc874-5e81-4da4-869b-7fff73de3bd1",
+                    "hasValidationError" : false,
+                    "id" : "pbInput"
+                  }
+                ],
+                [
+                  {
+                    "type" : "component",
+                    "dimension" : {
+                      "xs" : 12,
+                      "sm" : 12,
+                      "md" : 12,
+                      "lg" : 12
+                    },
+                    "propertyValues" : {
+                      "removeItem" : {
+                        "type" : "variable"
+                      },
+                      "hidden" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "cssClasses" : {
+                        "type" : "constant",
+                        "value" : "panel-footer text-center"
+                      },
+                      "buttonStyle" : {
+                        "type" : "constant",
+                        "value" : "primary"
+                      },
+                      "label" : {
+                        "type" : "interpolation",
+                        "value" : "Crear solicitud"
+                      },
+                      "dataToSend" : {
+                        "type" : "expression",
+                        "value" : "startPayload"
+                      },
+                      "dataFromError" : {
+                        "type" : "variable",
+                        "value" : "startFeedback.error"
+                      },
+                      "allowHTML" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "labelHidden" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "collectionPosition" : {
+                        "type" : "constant"
+                      },
+                      "targetUrlOnSuccess" : {
+                        "type" : "interpolation",
+                        "value" : "/bonita"
+                      },
+                      "action" : {
+                        "type" : "constant",
+                        "value" : "POST"
+                      },
+                      "collectionToModify" : {
+                        "type" : "variable"
+                      },
+                      "valueToAdd" : {
+                        "type" : "expression"
+                      },
+                      "disabled" : {
+                        "type" : "expression",
+                        "value" : "!processId || !startFormInput.solicitudInstanciaInput.numeroRadicado || !startFormInput.solicitudInstanciaInput.descripcion || !startFormInput.solicitudInstanciaInput.nombreSolicitante"
+                      },
+                      "alignment" : {
+                        "type" : "constant",
+                        "value" : "center"
+                      },
+                      "dimension" : {
+                        "type" : "constant",
+                        "value" : 12
+                      },
+                      "url" : {
+                        "type" : "interpolation",
+                        "value" : "../API/bpm/process/{{processId}}/instantiation"
+                      },
+                      "responseStatusCode" : {
+                        "type" : "variable",
+                        "value" : "startFeedback.statusCode"
+                      },
+                      "dataFromSuccess" : {
+                        "type" : "variable",
+                        "value" : "startFeedback.success"
+                      },
+                      "closeOnSuccess" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "assign" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "modalId" : {
+                        "type" : "constant",
+                        "value" : ""
+                      }
+                    },
+                    "reference" : "bb34c3ca-1c55-4b36-bad3-0a5d59f41a66",
+                    "hasValidationError" : false,
+                    "id" : "pbButton"
+                  }
+                ],
+                [
+                  {
+                    "type" : "component",
+                    "dimension" : {
+                      "xs" : 12,
+                      "sm" : 12,
+                      "md" : 12,
+                      "lg" : 12
+                    },
+                    "propertyValues" : {
+                      "allowHTML" : {
+                        "type" : "constant",
+                        "value" : true
+                      },
+                      "allowHtml" : {
+                        "type" : "constant",
+                        "value" : true
+                      },
+                      "labelHidden" : {
+                        "type" : "constant",
+                        "value" : true
+                      },
+                      "hidden" : {
+                        "type" : "expression",
+                        "value" : "!startFeedback.error"
+                      },
+                      "cssClasses" : {
+                        "type" : "constant",
+                        "value" : "alert alert-danger"
+                      },
+                      "label" : {
+                        "type" : "interpolation"
+                      },
+                      "text" : {
+                        "type" : "interpolation",
+                        "value" : "<strong>Error al crear la solicitud:</strong> {{startFeedback.error.message || 'Revise la información ingresada.'}}"
+                      },
+                      "alignment" : {
+                        "type" : "constant",
+                        "value" : "left"
+                      }
+                    },
+                    "reference" : "f6c3bd13-3103-4620-b7bd-44000f6f40e8",
+                    "hasValidationError" : false,
+                    "id" : "pbText"
+                  }
+                ],
+                [
+                  {
+                    "type" : "component",
+                    "dimension" : {
+                      "xs" : 12,
+                      "sm" : 12,
+                      "md" : 12,
+                      "lg" : 12
+                    },
+                    "propertyValues" : {
+                      "allowHTML" : {
+                        "type" : "constant",
+                        "value" : true
+                      },
+                      "allowHtml" : {
+                        "type" : "constant",
+                        "value" : true
+                      },
+                      "labelHidden" : {
+                        "type" : "constant",
+                        "value" : true
+                      },
+                      "hidden" : {
+                        "type" : "expression",
+                        "value" : "!startFeedback.success || !startFeedback.success.caseId"
+                      },
+                      "cssClasses" : {
+                        "type" : "constant",
+                        "value" : "alert alert-success"
+                      },
+                      "label" : {
+                        "type" : "interpolation"
+                      },
+                      "text" : {
+                        "type" : "interpolation",
+                        "value" : "<strong>Solicitud creada correctamente.</strong> Caso #{{startFeedback.success.caseId}} iniciado. ID de proceso: {{startFeedback.success.processDefinitionId || processId}}."
+                      },
+                      "alignment" : {
+                        "type" : "constant",
+                        "value" : "left"
+                      }
+                    },
+                    "reference" : "c1a59a7a-fede-4ef7-9aef-627d250ef0d2",
+                    "hasValidationError" : false,
+                    "id" : "pbText"
+                  }
+                ]
+              ]
+            },
+            {
+              "type" : "container",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 12,
+                "md" : 6,
+                "lg" : 6
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : "panel panel-info"
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                }
+              },
+              "reference" : "5be73c18-97f1-4b37-9af5-1a079acb0e64",
+              "hasValidationError" : false,
+              "id" : "pbContainer",
+              "rows" : [
+                [
+                  {
+                    "type" : "component",
+                    "dimension" : {
+                      "xs" : 12,
+                      "sm" : 12,
+                      "md" : 12,
+                      "lg" : 12
+                    },
+                    "propertyValues" : {
+                      "cssClasses" : {
+                        "type" : "constant",
+                        "value" : "panel-heading"
+                      },
+                      "hidden" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "allowHTML" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "text" : {
+                        "type" : "interpolation",
+                        "value" : "Guía rápida del flujo"
+                      },
+                      "level" : {
+                        "type" : "constant",
+                        "value" : "Level 3"
+                      },
+                      "alignment" : {
+                        "type" : "constant",
+                        "value" : "left"
+                      }
+                    },
+                    "reference" : "bc25f3df-c0ac-49bb-b885-6bdc6d324700",
+                    "hasValidationError" : false,
+                    "id" : "pbTitle"
+                  }
+                ],
+                [
+                  {
+                    "type" : "component",
+                    "dimension" : {
+                      "xs" : 12,
+                      "sm" : 12,
+                      "md" : 12,
+                      "lg" : 12
+                    },
+                    "propertyValues" : {
+                      "allowHTML" : {
+                        "type" : "constant",
+                        "value" : true
+                      },
+                      "allowHtml" : {
+                        "type" : "constant",
+                        "value" : true
+                      },
+                      "labelHidden" : {
+                        "type" : "constant",
+                        "value" : true
+                      },
+                      "hidden" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "cssClasses" : {
+                        "type" : "constant",
+                        "value" : "panel-body"
+                      },
+                      "label" : {
+                        "type" : "interpolation"
+                      },
+                      "text" : {
+                        "type" : "interpolation",
+                        "value" : "<ol class=\"list-unstyled\"><li><strong>Ciudadano 360</strong>: registra la solicitud con el formulario inicial.</li><li><strong>Líder</strong>: asigna responsable y observa comentarios.</li><li><strong>Servidor/Profesional</strong>: analiza viabilidad y prepara la respuesta.</li><li><strong>Líder</strong>: aprueba la respuesta y finaliza.</li></ol>"
+                      },
+                      "alignment" : {
+                        "type" : "constant",
+                        "value" : "left"
+                      }
+                    },
+                    "reference" : "4d252c5f-e2f9-4020-ad2b-96ae6c7b9a27",
+                    "hasValidationError" : false,
+                    "id" : "pbText"
+                  }
+                ],
+                [
+                  {
+                    "type" : "component",
+                    "dimension" : {
+                      "xs" : 12,
+                      "sm" : 12,
+                      "md" : 12,
+                      "lg" : 12
+                    },
+                    "propertyValues" : {
+                      "allowHTML" : {
+                        "type" : "constant",
+                        "value" : true
+                      },
+                      "allowHtml" : {
+                        "type" : "constant",
+                        "value" : true
+                      },
+                      "labelHidden" : {
+                        "type" : "constant",
+                        "value" : true
+                      },
+                      "hidden" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "cssClasses" : {
+                        "type" : "constant",
+                        "value" : "panel-footer"
+                      },
+                      "label" : {
+                        "type" : "interpolation"
+                      },
+                      "text" : {
+                        "type" : "interpolation",
+                        "value" : "Puedes abrir los formularios específicos desde la bandeja de tareas o usando los accesos directos generados más abajo."
+                      },
+                      "alignment" : {
+                        "type" : "constant",
+                        "value" : "left"
+                      }
+                    },
+                    "reference" : "db0c5d6e-3f74-4e96-976a-d9f4d251a6f5",
+                    "hasValidationError" : false,
+                    "id" : "pbText"
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : "section-title"
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Tareas pendientes"
           },
           "level" : {
             "type" : "constant",
@@ -42,13 +773,238 @@
             "value" : "left"
           }
         },
-        "reference" : "9ba66bf4-e9dc-4f39-97b3-d2125a558c6b",
+        "reference" : "4b9aa32e-4e5d-4987-9f0d-55a675e4b18a",
         "hasValidationError" : false,
         "id" : "pbTitle"
       }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "caption" : {
+            "type" : "interpolation",
+            "value" : "Tareas del flujo MiDiagrama"
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "headers" : {
+            "type" : "expression",
+            "value" : "return ['Tarea', 'Caso', 'Estado', 'Asignado'];"
+          },
+          "type" : {
+            "type" : "constant",
+            "value" : "Bonita API"
+          },
+          "apiUrl" : {
+            "type" : "expression",
+            "value" : "return '../API/bpm/userTask';"
+          },
+          "params" : {
+            "type" : "expression",
+            "value" : "return processId ? { f: ['processDefinitionId=' + processId, 'state=ready'], d: ['caseId', 'processDefinitionId', 'assigned_id'] } : { d: ['caseId', 'processDefinitionId', 'assigned_id'] };"
+          },
+          "columnsKey" : {
+            "type" : "expression",
+            "value" : "return ['displayName', 'caseId.id', 'state', 'assigned_id'];"
+          },
+          "sortColumns" : {
+            "type" : "expression",
+            "value" : "return ['displayName', 'state'];"
+          },
+          "pageSize" : {
+            "type" : "expression",
+            "value" : "return 5;"
+          },
+          "striped" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "condensed" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "bordered" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
+        "reference" : "d1bf7bd3-48f2-45f1-9dda-6930b9ef6072",
+        "hasValidationError" : false,
+        "id" : "pbDataTable"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : "section-title"
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Casos recientes"
+          },
+          "level" : {
+            "type" : "constant",
+            "value" : "Level 2"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "3eb84a71-0bcf-41e2-9d2f-0df9ff9b184f",
+        "hasValidationError" : false,
+        "id" : "pbTitle"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "caption" : {
+            "type" : "interpolation",
+            "value" : "Últimos casos instanciados"
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "headers" : {
+            "type" : "expression",
+            "value" : "return ['Caso', 'Solicitante', 'Estado', 'Inicio'];"
+          },
+          "content" : {
+            "type" : "expression",
+            "value" : "return caseSummaries;"
+          },
+          "columnsKey" : {
+            "type" : "expression",
+            "value" : "return ['caseNumber', 'requester', 'state', 'startDate|uiDate:\\'yyyy-MM-dd HH:mm\\''];"
+          },
+          "striped" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "condensed" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "bordered" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
+        "reference" : "935b7d02-9744-4e09-b7d5-3e06d9865e7b",
+        "hasValidationError" : false,
+        "id" : "pbTable"
+      }
     ]
   ],
-  "variables" : { },
+  "variables" : {
+    "processDefinition" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/process?p=0&c=1&f=name=MiDiagrama"
+      ],
+      "exposed" : false
+    },
+    "processId" : {
+      "type" : "expression",
+      "value" : [
+        "const definition = ($data.processDefinition && $data.processDefinition[0]) || null;",
+        "return definition ? definition.id : null;"
+      ],
+      "exposed" : false
+    },
+    "startFormInput" : {
+      "type" : "json",
+      "value" : [
+        "{\r",
+        "  \"solicitudInstanciaInput\" : {\r",
+        "    \"numeroRadicado\" : \"\",\r",
+        "    \"descripcion\" : \"\",\r",
+        "    \"nombreSolicitante\" : \"\"\r",
+        "  }\r",
+        "}"
+      ],
+      "exposed" : false
+    },
+    "startPayload" : {
+      "type" : "expression",
+      "value" : [
+        "return {",
+        "\tsolicitudInstanciaInput: $data.startFormInput.solicitudInstanciaInput",
+        "};"
+      ],
+      "exposed" : false
+    },
+    "startFeedback" : {
+      "type" : "json",
+      "value" : [
+        "{\r",
+        "  \"success\" : null,\r",
+        "  \"error\" : null,\r",
+        "  \"statusCode\" : null\r",
+        "}"
+      ],
+      "exposed" : false
+    },
+    "cases" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/case?p=0&c=10&o=startDate DESC&d=started_by&f=processDefinitionId={{processId}}"
+      ],
+      "exposed" : false
+    },
+    "caseSummaries" : {
+      "type" : "expression",
+      "value" : [
+        "if(!$data.cases){",
+        "\treturn [];",
+        "}",
+        "return $data.cases.map(function(item){",
+        "\treturn {",
+        "\t\tcaseNumber: item.id,",
+        "\t\trequester: item.started_by ? item.started_by.displayName : '',",
+        "\t\tstate: item.state,",
+        "\t\tstartDate: item.start_date",
+        "\t};",
+        "});"
+      ],
+      "exposed" : false
+    }
+  },
   "assets" : [
     {
       "id" : "27ad0e35-dcd7-43f7-93e9-204b4fe79d4d",

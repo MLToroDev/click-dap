@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "2589b2d7-6829-47e9-b5fd-66483f05116b",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1762526477480,
+  "lastUpdate" : 1762530448063,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -116,7 +116,16 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : { },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
         "reference" : "28d549f0-cdb8-45a6-ad46-67edf91520ff",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
@@ -130,7 +139,6 @@
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
-            [ ],
             [
               {
                 "type" : "component",
@@ -342,11 +350,37 @@
                   },
                   "value" : {
                     "type" : "variable",
-                    "value" : "formInput.observacionesLider"
+                    "value" : "formInput.solicitudInstanciaInput.observacionesLider"
                   },
                   "required" : {
                     "type" : "constant",
                     "value" : true
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "minLength" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "maxLength" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "debounce" : {
+                    "type" : "constant",
+                    "value" : 0
+                  },
+                  "min" : {
+                    "type" : "constant"
+                  },
+                  "max" : {
+                    "type" : "constant"
+                  },
+                  "step" : {
+                    "type" : "constant",
+                    "value" : 1
                   }
                 },
                 "reference" : "bf17aec7-1bdf-4184-ac7c-ba987c20a8c1",
@@ -431,7 +465,7 @@
                   },
                   "assign" : {
                     "type" : "constant",
-                    "value" : false
+                    "value" : true
                   },
                   "url" : {
                     "type" : "interpolation"
@@ -601,7 +635,7 @@
       "type" : "expression",
       "value" : [
         "return {",
-        "\tresponsable: $data.formInput.responsable,",
+        "\tresponsable: $data.formInput.responsable ? $data.formInput.responsable.toString() : '',",
         "\tobservacionesLider: $data.formInput.observacionesLider",
         "}"
       ],

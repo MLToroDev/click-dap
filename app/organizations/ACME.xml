@@ -313,12 +313,12 @@
       <enabled>true</enabled>
       <password encrypted="false">bpm</password>
     </user>
-    <user userName="marc.marseau">
+    <user userName="U2">
       <firstName>Marc</firstName>
       <lastName>Profesional</lastName>
       <title>Mr</title>
       <jobTitle>Engineer</jobTitle>
-      <manager>isabel.bleasdale</manager>
+      <manager>joseph.hovell</manager>
       <personalData/>
       <professionalData>
         <email>marc.marseau@acme.com</email>
@@ -696,7 +696,7 @@
       <groupParentPath>/acme</groupParentPath>
     </membership>
     <membership>
-      <userName>marc.marseau</userName>
+      <userName>U2</userName>
       <roleName>ServidorProfesional</roleName>
       <groupName>Profesionales</groupName>
       <groupParentPath>/acme</groupParentPath>
