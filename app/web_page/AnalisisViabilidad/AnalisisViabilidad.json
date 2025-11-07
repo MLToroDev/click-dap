@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "6d7b0c39-2f20-4ad3-9cd6-e7876cac41b6",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1762482000000,
+  "lastUpdate" : 1762535991806,
   "description" : "Formulario para el análisis de viabilidad",
   "rows" : [
     [
@@ -36,6 +36,10 @@
           "alignment" : {
             "type" : "constant",
             "value" : "left"
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : false
           }
         },
         "reference" : "4de8158f-07b7-4f7c-bf2f-7c396200dc8a",
@@ -49,8 +53,8 @@
         "dimension" : {
           "xs" : 12,
           "sm" : 12,
-          "md" : 4,
-          "lg" : 4
+          "md" : 2,
+          "lg" : 2
         },
         "propertyValues" : {
           "cssClasses" : {
@@ -79,8 +83,8 @@
         "dimension" : {
           "xs" : 12,
           "sm" : 12,
-          "md" : 4,
-          "lg" : 4
+          "md" : 2,
+          "lg" : 2
         },
         "propertyValues" : {
           "cssClasses" : {
@@ -109,8 +113,8 @@
         "dimension" : {
           "xs" : 12,
           "sm" : 12,
-          "md" : 4,
-          "lg" : 4
+          "md" : 8,
+          "lg" : 2
         },
         "propertyValues" : {
           "cssClasses" : {
@@ -128,6 +132,26 @@
           "text" : {
             "type" : "interpolation",
             "value" : "<strong>Estado actual:</strong> {{formInput.estado}}"
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Default label"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
           }
         },
         "reference" : "5deed475-3569-48d8-8b7b-4b3d8a5dba9f",
@@ -160,6 +184,26 @@
           "text" : {
             "type" : "interpolation",
             "value" : "<strong>Descripción:</strong><br/>{{formInput.descripcion}}"
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Default label"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
           }
         },
         "reference" : "1159252c-7d3f-4f23-9a76-4c62796b08f8",
@@ -174,7 +218,7 @@
           "xs" : 12,
           "sm" : 12,
           "md" : 12,
-          "lg" : 12
+          "lg" : 6
         },
         "propertyValues" : {
           "cssClasses" : {
@@ -225,6 +269,26 @@
           "selectedValue" : {
             "type" : "contract",
             "value" : "resultadoAnalisis"
+          },
+          "disabled" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "inline" : {
+            "type" : "constant",
+            "value" : false
           }
         },
         "reference" : "f032df1b-7446-47f0-8d1c-2af2fba9d4cb",
@@ -239,7 +303,7 @@
           "xs" : 12,
           "sm" : 12,
           "md" : 12,
-          "lg" : 12
+          "lg" : 6
         },
         "propertyValues" : {
           "cssClasses" : {
@@ -269,6 +333,30 @@
           "value" : {
             "type" : "contract",
             "value" : "comentariosTecnicos"
+          },
+          "readOnly" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "minLength" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "maxLength" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
           }
         },
         "reference" : "4c0dc79a-254a-40aa-bf67-deaee5dc7cc8",
@@ -309,6 +397,57 @@
           "action" : {
             "type" : "constant",
             "value" : "Submit task"
+          },
+          "disabled" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "assign" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "url" : {
+            "type" : "interpolation"
+          },
+          "responseStatusCode" : {
+            "type" : "variable"
+          },
+          "dataToSend" : {
+            "type" : "constant"
+          },
+          "dataFromSuccess" : {
+            "type" : "variable"
+          },
+          "closeOnSuccess" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "dataFromError" : {
+            "type" : "variable"
+          },
+          "targetUrlOnSuccess" : {
+            "type" : "interpolation"
+          },
+          "collectionToModify" : {
+            "type" : "variable"
+          },
+          "modalId" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "collectionPosition" : {
+            "type" : "constant",
+            "value" : "Last"
+          },
+          "valueToAdd" : {
+            "type" : "constant"
+          },
+          "removeItem" : {
+            "type" : "variable"
           }
         },
         "reference" : "a14cf579-ff3b-45ca-a0b9-86fca3b74d55",
@@ -318,20 +457,132 @@
     ]
   ],
   "variables" : {
-  
+    "previewTaskId" : {
+      "type" : "expression",
+      "value" : [
+        "return '';"
+      ],
+      "exposed" : false
+    },
+    "taskId" : {
+      "type" : "expression",
+      "value" : [
+        "const params = (typeof $parameters !== 'undefined' && $parameters) ? $parameters : {};",
+        "let value = params.id || params.taskId || '';",
+        "if (Array.isArray(value)) {",
+        "  value = value[0];",
+        "}",
+        "if (!value && typeof $page !== 'undefined' && $page) {",
+        "  value = $page.taskId || '';",
+        "}",
+        "if (!value && typeof window !== 'undefined' && window.location) {",
+        "  try {",
+        "    const url = new URL(window.location.href);",
+        "    value = url.searchParams.get('id') || url.searchParams.get('taskId') || '';",
+        "  } catch (error) {",
+        "    console.warn('[AnalisisViabilidad] No se pudo leer taskId desde window.location', error);",
+        "  }",
+        "}",
+        "if (!value && typeof $data.previewTaskId !== 'undefined' && $data.previewTaskId !== null) {",
+        "  value = $data.previewTaskId;",
+        "}",
+        "if (Array.isArray(value)) {",
+        "  value = value[0];",
+        "}",
+        "return value ? value.toString().trim() : '';"
+      ],
+      "exposed" : false
+    },
+    "contextUrl" : {
+      "type" : "expression",
+      "value" : [
+        "const id = $data.taskId || '';",
+        "return id ? '../API/bpm/userTask/' + encodeURIComponent(id) + '/context' : '';"
+      ],
+      "exposed" : false
+    },
+    "context" : {
+      "type" : "url",
+      "value" : [
+        "{{contextUrl}}"
+      ],
+      "exposed" : false
+    },
+    "solicitudPersistenceId" : {
+      "type" : "expression",
+      "value" : [
+        "const ctx = $data.context || {};",
+        "if (ctx.solicitudInstancia && ctx.solicitudInstancia.persistenceId) {",
+        "  return ctx.solicitudInstancia.persistenceId;",
+        "}",
+        "if (ctx.solicitudInstancia_ref) {",
+        "  const ref = ctx.solicitudInstancia_ref;",
+        "  if (ref.persistenceId) {",
+        "    return ref.persistenceId;",
+        "  }",
+        "  if (ref.link) {",
+        "    const match = ref.link.match(/\\/(\\d+)(?:$|\\?)/);",
+        "    if (match && match[1]) {",
+        "      return match[1];",
+        "    }",
+        "    return ref.link.replace(/.*\\//, '');",
+        "  }",
+        "}",
+        "return '';"
+      ],
+      "exposed" : false
+    },
+    "solicitudUrl" : {
+      "type" : "expression",
+      "value" : [
+        "const id = $data.solicitudPersistenceId || '';",
+        "return id ? '../API/bdm/businessData/com.company.model.Solicitud/' + encodeURIComponent(id) : '';"
+      ],
+      "exposed" : false
+    },
+    "solicitudInstancia" : {
+      "type" : "url",
+      "value" : [
+        "{{solicitudUrl}}"
+      ],
+      "exposed" : false
+    },
+    "formInput" : {
+      "type" : "expression",
+      "value" : [
+        "const contextData = $data.context || {};",
+        "const solicitud = $data.solicitudInstancia || contextData.solicitudInstancia || {};",
+        "function formatEstado(valor){",
+	"if(!valor){",
+	"\treturn '';",
+	"}",
+	"const lower = valor.toString().toLowerCase();",
+	"return lower.charAt(0).toUpperCase() + lower.slice(1);",
+        "}",
+        "return {",
+        "\tnombreSolicitante: solicitud.nombreSolicitante || '',",
+        "\tnumeroRadicado: solicitud.numeroRadicado || '',",
+        "\tdescripcion: solicitud.descripcion || '',",
+        "\testado: formatEstado(solicitud.estado || ''),",
+        "\tresultadoAnalisis: solicitud.resultadoAnalisis || '',",
+        "\tresponsable: solicitud.responsable || ''",
+        "};"
+      ],
+      "exposed" : false
+    }
   },
   "assets" : [
-    {
-      "id" : "d55995fb-2fae-4be9-9d9d-59be4773a140",
-      "name" : "localization.json",
-      "type" : "json",
-      "order" : 0,
-      "external" : false
-    },
     {
       "id" : "ce743414-538d-4c6d-84b3-4a7b625752dc",
       "name" : "style.css",
       "type" : "css",
+      "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "d55995fb-2fae-4be9-9d9d-59be4773a140",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     }
@@ -340,4 +591,3 @@
   "webResources" : [ ],
   "hasValidationError" : false
 }
-
